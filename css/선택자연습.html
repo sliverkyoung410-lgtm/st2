@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자연습</title>
+  <style>
+    #section1{background-color: #86c;}
+    /*p{background-color: #ccc;}
+    section p{background-color: #ccc;}*/
+    section > p {background-color: #ccc;}
+    /*모든 섹션에 태그의 후손->직계자식-> 클래스 박스 모든 피(영어)태그*/
+    /*section > .box>p {color:#f00}*/
+    section h2+ p{color: #f00;} /*형요소 + 바로아래동생요소 요소1+요소2 */
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header>헤더</header>
+    <div class="container">
+    <section id="section1">
+      <p>섹션슬로건1</p>
+      <div class="box">
+        <h2>섹션타이틀</h2>
+        <p>이벤트 설명1</p>
+        <p>이벤트 설명2</p>
+      </div>
+    </section>
+    <section id="section2">  
+      <p>섹션슬로건1</p>
+      <div class="box">
+        <h2>섹션타이틀</h2>
+        <p>이벤트 설명1</p>
+        <p>이벤트 설명2</p>
+      </div></section>
+    <section id="section3">  
+      <p>섹션슬로건1</p>
+      <div class="box">
+        <h2>섹션타이틀</h2>
+        <p>이벤트 설명1</p>
+        <p>이벤트 설명2</p>
+      </div></section>
+    </div>
+
+    <footer>푸터</footer>
+  </div>
+</body>
+</html>
