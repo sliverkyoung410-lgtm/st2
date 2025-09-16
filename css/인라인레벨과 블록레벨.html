@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인라인레벨과 블록레벨</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .container{
+      /* width: 80%; /* 부모의 컨테이너 영역에 80프로 */
+      /* margin: 0 auto; 오토는 가운데 가져올때 사용한다 */ 
+      background-color: #ccc;
+    }
+    .inner{
+      width: 80%;
+      margin: 0 auto;
+      padding: 50px 0;
+      /* background-color: #ef6; */
+    }
+    .box{
+      /* margin: 50px auto; */
+      margin-bottom: 50px;
+      background-color: #fbf;
+    }
+    .box:last-child{
+      margin-bottom: 0;
+    }
+    .box span{ /* 인라인레벨 width/height 지정못함. 수직 여백 정상적으로 적용 못함 . 크기는 포함 내용이 결정한다.*/
+      color: #f00;
+      font-weight: bold;
+      font-size: 1arge;
+      background-color: #ef8;
+      padding: 16px;
+      margin: 8px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inner">
+  
+      <div class="box box1">Lorem <span>ipsum</span> dolor sit amet consectetur, adipisicing <span>elit</span>. Adipisci, saepe asperiores, deserunt
+        a tempora repellat est cupiditate ullam dolor nesciunt sint corrupti hic aperiam eos laboriosam eum minus vero
+        quia!</div>
+      <div class="box box2">Magnam hic saepe qui molestias beatae repellat voluptates, ea neque non earum fugiat
+        recusandae magni voluptate laudantium dicta sint vitae nisi alias a repudiandae. Deserunt reiciendis delectus
+        placeat et pariatur!</div>
+      <div class="box box2">Magnam hic saepe qui molestias beatae repellat voluptates, ea neque non earum fugiat
+        recusandae magni voluptate laudantium dicta sint vitae nisi alias a repudiandae. Deserunt reiciendis delectus
+        placeat et pariatur!</div>
+    </div>
+  </div>
+</body>
+</html>

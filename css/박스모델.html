@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스모델</title>
+  <style>
+    *{ margin:0; padding:0:}
+    .box{ border: 1px solid #000;}
+    .box1{ /*margin:50px 100px 200px 400px;8/ /* 상 우 하 좌 */}
+    .box2{ /*padding:50px 100px;*/ /* 성하 우좌 (하 좌 생략)*/}
+    .box{ /*margin:50px;*/} /* 상우하좌 동일 / 마진 : 값1 */
+    .box2{ margin:100px;}
+    .box1{ margin-top:50px;}
+    .container{margin-top:50px; /*border:4px dotted #f00;*/}
+    .box3{ margin: 50px 100px 70px} /* 상 우좌 하 */
+    .box4{ margin: 50px 100px} /* 상하 좌우*/
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores atque beatae minima, doloremque, saepe adipisci nulla placeat excepturi repellat fugiat impedit sit illum qui. Aliquid incidunt officia quasi ut deserunt!</div>
+    <div class="box box2">Nobis corrupti quam at soluta, minus odit repellendus nostrum enim iusto quas officia explicabo eum delectus expedita molestiae, labore quia harum dolorem ipsa alias, nesciunt mollitia ducimus est! Magnam, odit.</div>
+    <div class="box box3">Ipsam saepe nulla voluptate ex sapiente quaerat vitae error repellendus tempore minima officiis nam animi, quo maxime culpa, natus explicabo libero quos. Itaque perferendis earum ducimus aspernatur necessitatibus, ipsum optio?</div>
+    <div class="box box4">Nesciunt, ducimus provident sequi laborum est temporibus magni quibusdam ratione quos aspernatur porro vel voluptatibus, neque, molestias minima distinctio labore ipsum esse veritatis unde alias perspiciatis soluta earum illo! Repudiandae.</div>
+  </div>
+</body>
+</html>
