@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>말줄임표css</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .box{
+      margin:50px; 
+      padding: 1em;
+      background-color: #ccc;
+    }
+    .box1{
+      /* white-space: normal; */
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      /* -webkit-line-clamp: 3; */
+      width: 80%;
+      height: 70px;
+    }
+    .box2{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .box3,
+    .box4,
+    .box5{
+      width: 400px;
+      height: 40px;
+    }
+    .box3{overflow: visible;}
+    .box4{overflow: hidden;}
+    .box5{overflow: auto;}
+  </style>
+</head>
+<body>
+  <div class="box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat omnis tempore, blanditiis nam beatae, exercitationem dignissimos amet quis asperiores dolorem odit illo. Iure qui magni non ratione est eaque cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat omnis tempore, blanditiis nam beatae, exercitationem dignissimos amet quis asperiores dolorem odit illo. Iure qui magni non ratione est eaque cum?</div>
+  <div class="box box2">Nemo laudantium ut animi dolore hic assumenda veniam quaerat rem minima deleniti delectus quidem culpa vero ipsam officia eum a quam eos voluptatem, ea mollitia possimus earum minus alias. Odio?</div>
+  <hr>
+  <div class="box box3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente deserunt tempora corrupti incidunt nulla numquam officiis laboriosam reprehenderit maxime veniam delectus, assumenda vel saepe nam ipsa accusamus sit dolor at?</div>
+  <div class="box box4">Natus illum possimus fugiat itaque sint error molestiae ipsam vitae, dolores quos qui dignissimos neque maiores expedita distinctio quibusdam minus officiis velit ullam consequatur. Dolorum libero nesciunt nobis temporibus modi.</div>
+  <div class="box box5">Natus illum possimus fugiat itaque sint error molestiae ipsam vitae, dolores quos qui dignissimos neque maiores expedita distinctio quibusdam minus officiis velit ullam consequatur. Dolorum libero nesciunt nobis temporibus modi.</div>
+</body>
+</html>
