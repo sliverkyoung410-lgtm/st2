@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>border-radius</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .box{
+      background-color: #ccc;
+      height: auto;
+      min-height: 100px;
+      margin: 20px;
+      width: 100px;
+
+    }
+    .box1{border-radius: 10px;}
+    .box2{border-radius: 10px 20px 30px 40px;}
+    .box3{border-radius:  50% 0;}
+    .box4{border-radius: 50%;}
+    .box5{border-radius: 0 0 50% 50%;}
+    .box6{
+      width: 200px;
+      height: 200px;
+      border-radius: 50px;
+    
+    }
+    section{
+      margin-top: 50px;
+    }
+    .keyword-wrap{
+      text-align: center;
+      /* margin:50px 0; */
+    }
+    .keyword1{ margin-bottom: 20px;}
+    /* .keyword2{} */
+    .kewword-item{
+      display: inline-block;
+      padding: 0 1rem; 
+      line-height:42px; /* 한줄 문자일때 높이 지정할려고 하면 자주 사용함. */
+      border-radius: 21px;
+      border:1px solid #efefef;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="keyword1 keyword-wrap">
+      <div class="kewword-item">keywrod001</div>
+      <div class="kewword-item">key2</div>
+      <div class="kewword-item">keywrod3</div>
+      <div class="kewword-item">wrod004</div>
+      <div class="kewword-item">wrod005</div>
+      <div class="kewword-item">wrod006</div>
+    </div>    
+    <div class="keyword2 keyword-wrap">
+      <div class="kewword-item">keywrod001</div>
+      <div class="kewword-item">key2</div>
+      <div class="kewword-item">wrod003</div>
+      <div class="kewword-item">wrod004</div>
+      <div class="kewword-item">wrod005</div>
+    </div>
+    <hr>
+  </section>
+  <div class="box box1"></div>
+  <div class="box box2">123</div>
+  <div class="box box3"></div>
+  <div class="box box4"></div>
+  <div class="box box5"></div>
+  <div class="box box6"></div>
+</body>
+</html>
