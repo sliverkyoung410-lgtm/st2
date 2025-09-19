@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prdList_item position연습</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    body{margin: 50px; color: #333;}
+    ol, ul,li{list-style: none;}
+    a:link, a:visited, a:active{
+      color:currentColor;
+      text-decoration: none;}
+    .xans-record-{
+      width: 50%;
+      background-color: #ccc;
+    }
+    .prdList__item{}
+    .prdList__item .thumbnail{}
+    .prdList__item .thumbnail>a{}
+    .prdList__item .thumbnail .likebuton{}
+    .prdList__item .thumbnail .icon__box{}
+    .prdList__item .thumbnail .icon__box span{}
+    .prdList__item .thumbnail .sale_box{}
+    .prdList__item .description{}
+    
+  </style>
+</head>
+<body>
+  <li class="xans-record-">
+    <div class="prdList_item">
+      <div class="thumbnail">
+        <a href="">이미지</a>
+        <div class="likeButton">좋아요 버튼</div>
+        <div class="icon_box">
+         <span></span>
+         <span></span>
+         <span></span>
+        </div>
+        <div class="sale_box">90%</div>
+       </div>
+       <div class="description">설명</div>
+     </div>
+  </li>
+</body>
+</html>
