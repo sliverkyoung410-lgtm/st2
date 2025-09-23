@@ -2,9 +2,9 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>float연습2.퍼센트 계산</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>float 연습2-퍼센트 계산</title>
 </head>
 <style>
   *{margin: 0; padding: 0;}
@@ -23,25 +23,27 @@
     min-width: 1040px;
     max-width: 1400px;
     margin: 0 auto;
-    overflow: hidden; /* 히든을 준 이유는 지정된 자식요소를 인식하게 하기 위해서. */
+    overflow: hidden;/*float 지정된 자식요소를 인식*/
     background-color: #aaa;
   }
-  .container::after{ /* float 지정된 요소 이후에 있는 inline 요소에게서 float 영향 제거  */
+  /* float 지정된 요소 이후에 있는 inline 요소에게서 float 영향 제거 */
+  .container::after{
     content: "";
     display: block;
     clear: both;
   }
-  .lnb{
-    float: left;
-    /* width: 200px; */
+
+  .lnb{  /* 단으로 처리 */
+    float:left;
+    /* width:200px; */
     /* width: 20%; */
-    width: calc(20% - 20px); /* 함수 계산임 자주 사용하게 되니까 기억하기!! */
+    width: calc(20% - 20px);
     min-height: 400px;
-    margin-right: 20px;
+    margin-right:20px;
     background-color: #ef6;
   }
-  .main-wrap{
-    float: left;
+  .main-wrap{  /* 단으로 처리 */
+    float:left;
     /* width: 600px; */
     /* width: 60%; */
     width: calc(60% - 20px);
@@ -49,8 +51,8 @@
     background-color: #6fc;
   }
   .main-wrap section{}
-  .right{
-    float: right;
+  .right{  /* 단으로 처리 */
+    float:right;
     /* width: 200px; */
     width: 20%;
     min-height: 500px;
@@ -66,14 +68,17 @@
   <div class="wrap">
     <header>헤더</header>
     <div class="container">
-      <div class="lnb">lnb</div>
+      <div class="lnb">lbn</div>
+      <!-- main.main-wrap>section -->
       <main class="main-wrap">
-        <section>메인내용</section>
+        <section>메인 내용</section>
       </main>
       <aside class="right">관련내용</aside>
     </div>
+    <!-- //.container -->
     <footer>푸터</footer>
   </div>
+  <!-- //.wrap -->
 </body>
 
 </html>
