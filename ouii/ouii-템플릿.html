@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+
+  <!-- PG크로스브라우징필수내용 -->
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <!-- // PG크로스브라우징필수내용 -->
+
+  <title>오우이 템플릿</title>
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/common.css"><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+  <link rel="stylesheet" href="/ouii/layout/basic/css/layout.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-ui.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-button.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-tab.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-table.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-tooltip.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-help.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-fold.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-box.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-desc.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-product.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-prdInfo.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/ec-base-paginate.css">
+
+  <!-- ------------------ -->
+  <!--@css(/layout/basic/css/common.css)--><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+  <!--@css(/layout/basic/css/layout.css)-->
+  <!--@css(/layout/basic/css/ec-base-ui.css)-->
+  <!--@css(/layout/basic/css/ec-base-button.css)-->
+  <!--@css(/layout/basic/css/ec-base-tab.css)-->
+  <!--@css(/layout/basic/css/ec-base-table.css)-->
+  <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+  <!--@css(/layout/basic/css/ec-base-help.css)-->
+  <!--@css(/layout/basic/css/ec-base-fold.css)-->
+  <!--@css(/layout/basic/css/ec-base-box.css)-->
+  <!--@css(/layout/basic/css/ec-base-desc.css)-->
+  <!--@css(/layout/basic/css/ec-base-product.css)-->
+  <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+  <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- theme03 -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- theme03 -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Red+Hat+Display:wght@400;500;700&display=swap"
+    rel="stylesheet"><!-- theme04 -->
+
+  <!--@css(/layout/basic/css/swiper.min.css)-->
+  <!--@js(/layout/basic/js/swiper-bundle.min.js)-->
+  <!--@js(/js/module/product/sale_price.js)-->
+
+  <!--@js(/layout/basic/js/basic.js)-->
+  <!--@js(/layout/basic/js/layout.js)-->
+  <!--@js(/js/common.js)-->
+</head>
+
+<body class="theme01" data-ez-theme="theme01">
+  <div id="skipNavigation">
+    <p><a href="#category">전체상품목록 바로가기</a></p>
+    <p><a href="#contents">본문 바로가기</a></p>
+  </div>
+  <div id="wrap">
+    <!--@import(/layout/basic/header.html)-->
+    <!--@import(/layout/basic/sidebar.html)-->
+    <div id="container">
+      <div id="contents">
+        <!-- 메인 콘덴츠 영역 -->
+        <!--@contents-->
+        <section class="section">
+          <div data-ez-holer="product_listmain">
+            <div
+              class="xans-element- xans-product xans-product-listmain-1 xans-product-listmain xans-product-1 ec-base-product"><!--
+						$count = 100
+						$basket_result = /product/add_basket.html
+						$basket_option = /product/basket_option.html
+						$moreview = yes
+						$cache = yes
+					-->
+              <ul class="prdList grid4 card-border-no-margin" data-ez-role="layout ez-discount-tag">
+                <!--
+※ 상품진열 공통소스
+-->
+                <li id="anchorBoxId_33" class="xans-record-">
+                  <div class="prdList__item">
+                    <div class="thumbnail">
+                      <a href="/product/샬랄라-원피스-연습4/33/category/1/display/2/?icid=MAIN.product_listmain_1"><img
+                          src="//sharon410.cafe24.com/web/product/medium/202509/e9a2a503379dcdeb6339c53b6ea75c69.png"
+                          id="eListPrdImage33_2" alt="샬랄라 원피스 연습4" loading="lazy"><span
+                          class="xans-element- xans-product xans-product-imagestyle-1 xans-product-imagestyle xans-product-1 xans-record-"><span
+                            class="prdIcon ec-product-bgLT"
+                            style="background-image:url('//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_thumb_own1.png');"></span>
+                        </span>
+                        <span
+                          class="xans-element- xans-product xans-product-imagestyle-1 xans-product-imagestyle xans-product-1 xans-record-"><span
+                            class="prdIcon ec-product-bgRT"
+                            style="background-image:url('//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_thumb_plan3.png');"></span>
+                        </span>
+                      </a>
+                      <div class="likeButton likePrd likePrd_33"><button type="button"><img
+                            src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png" class="likePrdIcon"
+                            product_no="33" category_no="1" icon_status="off" alt="좋아요 등록 전"> <strong><span
+                              class="likePrdCount likePrdCount_33">0</span></strong></button></div>
+                      <div class="badge"><span></span></div>
+                      <div class="icon__box">
+                        <span class="wish on"><img
+                            src="myfolder/images/love_13360739.png"
+                            class="icon_img ec-product-listwishicon" alt="관심상품 등록 후" productno="33" categoryno="1"
+                            icon_status="on" login_status="T" individual-set="F">WISH</span>
+                        <span class="cart"><img
+                            src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                            onclick="category_add_basket('33','1', '2', 'A0000', false, '1', 'P00000BH', 'A', 'F', '0');"
+                            alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+                        <span class="option" style="">OPTION</span>
+                      </div>
+                    </div>
+                    <div class="description" ec-data-custom="" ec-data-price="39000">
+                      <div class="name"><a
+                          href="/product/샬랄라-원피스-연습4/33/category/1/display/2/?icid=MAIN.product_listmain_1"
+                          class=""><span class="title "><span class="" style="font-size:12px;color:#555555;">상품명</span>
+                            :</span> <span class="" style="font-size:12px;color:#555555;">샬랄라 원피스 연습4</span></a></div>
+                      <p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+                      <ul
+                        class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec">
+                        <li class=" xans-record-">
+                          <strong class="title "><span class="" style="font-size:12px;color:#555555;">판매가</span>
+                            :</strong> <span class="" style="font-size:12px;color:#555555;">39,000원</span><span
+                            id="span_product_tax_type_text" style=""> </span>
+                        </li>
+                      </ul>
+                      <div class="icon"> </div>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchorBoxId_31" class="xans-record-">
+                  <div class="prdList__item">
+                    <div class="thumbnail">
+                      <a href="/product/상품등록연습3/31/category/1/display/2/?icid=MAIN.product_listmain_1"><img
+                          src="//sharon410.cafe24.com/web/product/medium/202509/3bacc12a6c8c60fa2b1ad9ee57dccd25.png"
+                          id="eListPrdImage31_2" alt="상품등록연습3" loading="lazy"></a>
+                      <div class="likeButton likePrd likePrd_31"><button type="button"><img
+                            src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png" class="likePrdIcon"
+                            product_no="31" category_no="1" icon_status="off" alt="좋아요 등록 전"> <strong><span
+                              class="likePrdCount likePrdCount_31">0</span></strong></button></div>
+                      <div class="badge"><span></span></div>
+                      <div class="icon__box">
+                        <span class="wish"><img
+                            src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png"
+                            class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="31" categoryno="1"
+                            icon_status="off" login_status="T" individual-set="F">WISH</span>
+                        <span class="cart"><img
+                            src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                            onclick="category_add_basket('31','1', '2', 'A0000', false, '1', 'P00000BF', 'A', 'F', '0');"
+                            alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+                        <span class="option" style="display: none;">OPTION</span>
+                      </div>
+                    </div>
+                    <div class="description" ec-data-custom="" ec-data-price="20000">
+                      <div class="name"><a href="/product/상품등록연습3/31/category/1/display/2/?icid=MAIN.product_listmain_1"
+                          class=""><span class="title "><span class="" style="font-size:12px;color:#555555;">상품명</span>
+                            :</span> <span class="" style="font-size:12px;color:#555555;">상품등록연습3</span></a></div>
+                      <p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+                      <ul
+                        class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec">
+                        <li class=" xans-record-">
+                          <strong class="title "><span class="" style="font-size:12px;color:#555555;">판매가</span>
+                            :</strong> <span class="" style="font-size:12px;color:#555555;">20,000원</span><span
+                            id="span_product_tax_type_text" style=""> </span>
+                        </li>
+                      </ul>
+                      <div class="icon"> </div>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchorBoxId_30" class="xans-record-">
+                  <div class="prdList__item">
+                    <div class="thumbnail">
+                      <a href="/product/상품등록연습2/30/category/1/display/2/?icid=MAIN.product_listmain_1"><img
+                          src="//sharon410.cafe24.com/web/product/medium/202509/759c9d3c8899aa744e23f5be577e75e4.png"
+                          id="eListPrdImage30_2" alt="상품등록연습2" loading="lazy"></a>
+                      <div class="likeButton likePrd likePrd_30 selected"><button type="button"><img
+                            src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit_on.png"
+                            class="likePrdIcon" product_no="30" category_no="1" icon_status="on" alt="좋아요 등록 후">
+                          <strong><span class="likePrdCount likePrdCount_30">1</span></strong></button></div>
+                      <div class="badge"><span></span></div>
+                      <div class="icon__box">
+                        <span class="wish"><img
+                            src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png"
+                            class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="30" categoryno="1"
+                            icon_status="off" login_status="T" individual-set="F">WISH</span>
+                        <span class="cart"><img
+                            src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                            onclick="category_add_basket('30','1', '2', 'A0000', false, '1', 'P00000BE', 'A', 'F', '0');"
+                            alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+                        <span class="option" style="">OPTION</span>
+                      </div>
+                    </div>
+                    <div class="description" ec-data-custom="" ec-data-price="20000">
+                      <div class="name"><a href="/product/상품등록연습2/30/category/1/display/2/?icid=MAIN.product_listmain_1"
+                          class=""><span class="title "><span class="" style="font-size:12px;color:#555555;">상품명</span>
+                            :</span> <span class="" style="font-size:12px;color:#555555;">상품등록연습2</span></a></div>
+                      <p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+                      <ul
+                        class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec">
+                        <li class=" xans-record-">
+                          <strong class="title "><span class="" style="font-size:12px;color:#555555;">판매가</span>
+                            :</strong> <span class="" style="font-size:12px;color:#555555;">20,000원</span><span
+                            id="span_product_tax_type_text" style=""> </span>
+                        </li>
+                      </ul>
+                      <div class="icon"> </div>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchorBoxId_29" class="xans-record-">
+                  <div class="prdList__item">
+                    <div class="thumbnail">
+                      <a href="/product/상품등록연습1/29/category/1/display/2/?icid=MAIN.product_listmain_1"><img
+                          src="//sharon410.cafe24.com/web/product/medium/202509/bf0a0352c9c532b05648ae8a79d0de65.png"
+                          id="eListPrdImage29_2" alt="상품등록연습1" loading="lazy"></a>
+                      <div class="likeButton likePrd likePrd_29"><button type="button"><img
+                            src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png" class="likePrdIcon"
+                            product_no="29" category_no="1" icon_status="off" alt="좋아요 등록 전"> <strong><span
+                              class="likePrdCount likePrdCount_29">0</span></strong></button></div>
+                      <div class="badge"><span></span></div>
+                      <div class="icon__box">
+                        <span class="wish"><img
+                            src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png"
+                            class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="29" categoryno="1"
+                            icon_status="off" login_status="T" individual-set="F">WISH</span>
+                        <span class="cart"><img
+                            src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                            onclick="category_add_basket('29','1', '2', 'A0000', false, '1', 'P00000BD', 'A', 'F', '0');"
+                            alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+                        <span class="option" style="display: none;">OPTION</span>
+                      </div>
+                    </div>
+                    <div class="description" ec-data-custom="" ec-data-price="45000">
+                      <div class="name"><a href="/product/상품등록연습1/29/category/1/display/2/?icid=MAIN.product_listmain_1"
+                          class=""><span class="title "><span class="" style="font-size:12px;color:#555555;">상품명</span>
+                            :</span> <span class="" style="font-size:12px;color:#555555;">상품등록연습1</span></a></div>
+                      <p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+                      <ul
+                        class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec">
+                        <li class=" xans-record-">
+                          <strong class="title "><span class="" style="font-size:12px;color:#555555;">판매가</span>
+                            :</strong> <span class="" style="font-size:12px;color:#555555;">45,000원</span><span
+                            id="span_product_tax_type_text" style=""> </span>
+                        </li>
+                      </ul>
+                      <div class="icon"> </div>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchorBoxId_14" class="xans-record-">
+                  <div class="prdList__item">
+                    <div class="thumbnail">
+                      <a href="/product/아드헬린-루즈핏-셔츠-블루/14/category/1/display/2/?icid=MAIN.product_listmain_1"><img
+                          src="//sharon410.cafe24.com/web/product/medium/202508/831d6ff650070eff6bfe5e1a91069c7c.jpg"
+                          id="eListPrdImage14_2" alt="아드헬린 루즈핏 셔츠 블루" loading="lazy"></a>
+                      <div class="likeButton likePrd likePrd_14 selected"><button type="button"><img
+                            src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit_on.png"
+                            class="likePrdIcon" product_no="14" category_no="1" icon_status="on" alt="좋아요 등록 후">
+                          <strong><span class="likePrdCount likePrdCount_14">1</span></strong></button></div>
+                      <div class="badge"><span></span></div>
+                      <div class="icon__box">
+                        <span class="wish"><img
+                            src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png"
+                            class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="14" categoryno="1"
+                            icon_status="off" login_status="T" individual-set="F">WISH</span>
+                        <span class="cart"><img
+                            src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                            onclick="category_add_basket('14','1', '2', 'A0000', false, '1', 'P000000O', 'A', 'F', '0');"
+                            alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+                        <span class="option" style="display: none;">OPTION</span>
+                      </div>
+                    </div>
+                    <div class="description" ec-data-custom="" ec-data-price="45000">
+                      <div class="name"><a
+                          href="/product/아드헬린-루즈핏-셔츠-블루/14/category/1/display/2/?icid=MAIN.product_listmain_1"
+                          class=""><span class="title "><span class="" style="font-size:12px;color:#555555;">상품명</span>
+                            :</span> <span class="" style="font-size:12px;color:#555555;">아드헬린 루즈핏 셔츠 블루</span></a>
+                      </div>
+                      <p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+                      <ul
+                        class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec">
+                        <li class=" xans-record-">
+                          <strong class="title "><span class="" style="font-size:12px;color:#555555;">판매가</span>
+                            :</strong> <span class="" style="font-size:12px;color:#555555;">45,000원</span><span
+                            id="span_product_tax_type_text" style=""> </span>
+                        </li>
+                      </ul>
+                      <div class="icon"> </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- //[data-ez-holder] -->
+    </div>
+    <!--@import(/layout/basic/footer.html)-->
+  </div><!-- //wrap -->
+
+  <div id="progressPaybar" style="display:none;">
+    <div id="progressPaybarBackground" class="layerProgress"></div>
+    <div id="progressPaybarView">
+      <div class="box">
+        <h3>현재 결제가 진행중입니다.</h3>
+        <p class="txt">
+          본 결제 창은 결제완료 후 자동으로 닫히며,결제 진행 중에 본 결제 창을 닫으시면<br>
+          주문이 되지 않으니 결제 완료 될 때 까지 닫지 마시기 바랍니다.
+        </p>
+        <div class="progressbar"><img src="//img.echosting.cafe24.com/skin/skin/common/img_loading.gif" alt="loading"
+            loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="layer_shadow" id="layer_shadow"></div>
+  <div id="layoutDimmed" class="dimmed"></div>
+  <link rel="stylesheet" href="/ouii/layout/basic/css/sub_style.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/sub_theme.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/add_theme01.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/add_theme02.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/add_theme03.css">
+  <link rel="stylesheet" href="/ouii/layout/basic/css/add_layout.css">
+
+  <link rel="stylesheet" href="/ouii/myfolder/mystyle.css">
+
+  <!-- ------------------------- -->
+  <!--@css(/layout/basic/css/sub_style.css)-->
+  <!--@css(/layout/basic/css/sub_theme.css)-->
+  <!--@css(/layout/basic/css/add_theme01.css)-->
+  <!--@css(/layout/basic/css/add_theme02.css)-->
+  <!--@css(/layout/basic/css/add_theme03.css)-->
+  <!--@css(/layout/basic/css/add_layout.css)-->
+</body>
+
+</html>
