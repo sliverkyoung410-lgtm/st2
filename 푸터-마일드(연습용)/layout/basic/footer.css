@@ -5,7 +5,7 @@
 #footer{
   width:100%;
   border-top:1px solid #e5e5e5;
-  background-color: #ccc; /*테스트용 삭제*/
+  
 }
 #footer .inner{
   width:92%;
@@ -29,10 +29,18 @@
   display: flex; /* 나란히 놓고 싶을때 사용할것. */
   justify-content: space-between;
 }
+
+@media (max-width:767px){
+  .bt_top .info_left{}
+}
 /* 왼쪽 로고, 기본정보 */
 .bt_top .info_left{}
 .bt_top .info_left .bt_logo{
   margin-bottom: 30px;
+  overflow: hidden;
+}
+.bt_top .info_left .bt_logo .bt_logo-image{
+  text-indent: -99999px;
 }
 .bt_top .info_left .bt_logo a{
   display: flex;
@@ -40,12 +48,18 @@
   align-items: center;
   line-height: 1;
 }
+.bt_top .info_left .bt_logo.bt_logo-text a{
+  font-size: 30px;
+  line-height: 1.6
+}
 /* clamp()함수 clamp(최소값, 선호값, 최대값) */
 .bt_top .info_left .bt_logo a img{
   width: clamp(150px,10vw,200px);
 }
-.bt_top .info_left ul{}
-.bt_top .bt_top_fold{}
-
-.bt_middle{width: 100%;}
-.bt_bottom{width: 100%;}
+.bt_top .info_left .bt_logo.bt_logo-text img{
+  display: none;
+}
+.bt_top .info_left .bt_logo .bt_logo-image img{
+  /* 로고를 회색톤으로 변경하고싶을때 사용하기 */
+  filter:grayscale(60%);
+}
