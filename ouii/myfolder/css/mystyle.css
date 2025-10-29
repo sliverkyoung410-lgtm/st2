@@ -7,10 +7,10 @@ mystyle
 변수 variables
 ******/
 
-@import url(/myfolder/css/ub-variables.css);
+/* @import url(/myfolder/css/ub-variables.css);
 :root{
---primary-color:#1f1f1f;
-}
+--primary-color:#1f1f1f; */
+
 
 
 /********
@@ -828,3 +828,14 @@ content_list */
     margin-bottom: 16px;
    }
   }/*@media (max-width:767px) */
+
+  /* 배너매니저 동영상 스타일  */
+    .df-bannermanager{width:100%;}
+   
+    .df-bannermanager div[df-banner-clone]{
+      width: 100%; aspect-ratio: 16/9;
+    }
+
+     .df-bannermanager div[df-banner-clone] iframe{
+      display: block; width: 100%; height: 100%;
+     }
