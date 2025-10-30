@@ -1,0 +1,26 @@
+#footer .inner .bt_logo {
+    font-size: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    margin-bottom: 20px;
+}
+#footer .inner > div {
+    flex-basis: 100%;
+    justify-self: center;
+    margin: auto;
+}
+#footer .inner .bt_util {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: row;
+}
+#footer .inner .bt_bottom {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
