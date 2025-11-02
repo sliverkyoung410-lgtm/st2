@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+
+  <!-- PG크로스브라우징필수내용 -->
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <!-- // PG크로스브라우징필수내용 -->
+
+  <title></title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/common.css"><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/layout.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-ui.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-button.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-tab.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-table.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-tooltip.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-help.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-fold.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-box.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-desc.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-product.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-prdInfo.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-paginate.css">
+  <link rel="stylesheet" href="/newfolder/css/ub-variables.css">
+  <link rel="stylesheet" href="/newfolder/css/ub-grid-system.css">
+
+  <!--@css(/layout/basic/css/common.css)--><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+  <!--@css(/layout/basic/css/layout.css)-->
+  <!--@css(/layout/basic/css/ec-base-ui.css)-->
+  <!--@css(/layout/basic/css/ec-base-button.css)-->
+  <!--@css(/layout/basic/css/ec-base-tab.css)-->
+  <!--@css(/layout/basic/css/ec-base-table.css)-->
+  <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+  <!--@css(/layout/basic/css/ec-base-help.css)-->
+  <!--@css(/layout/basic/css/ec-base-fold.css)-->
+  <!--@css(/layout/basic/css/ec-base-box.css)-->
+  <!--@css(/layout/basic/css/ec-base-desc.css)-->
+  <!--@css(/layout/basic/css/ec-base-product.css)-->
+  <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+  <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"><!-- theme02 -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" /><!-- theme03 -->
+  <!--@css(/layout/basic/css/swiper.min.css)-->
+  <!--@js(/layout/basic/js/swiper-bundle.min.js)-->
+  <!--@js(/js/module/product/sale_price.js)-->
+
+  <!--@js(/layout/basic/js/basic.js)-->
+  <!--@js(/layout/basic/js/layout.js)-->
+  <!--@js(/js/common.js)-->
+  <script>try { window.EZST = { q: [], register: function (a, b) { this.push([a, (b.init || b)(), arguments]) } } } catch (e) { }</script>
+  <!--ez-favicon[-->
+  <!--ez-favicon]-->
+  <!--@js(/ez/init.js)-->
+  <script type="text/ez-prop">
+	<ez-prop data-version="1.0.0">
+		<ez-var data-prop="theme" data-namespace="ez.layout.theme" data-type="array">
+			<ez-item data-id="theme01" data-name="MODERN" data-desc="모던하고 차분한 스타일" data-font="Noto Sans KR" data-background-color="#f4f4f4" override-value="html" data-font-css="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap">
+				모던하고 차분한 스타일
+				<style>
+					.theme-box.type1 .desc {color:#111;font-weight:400;}
+					.theme-box .word {color:#111;}
+				</style>
+			</ez-item>
+			<ez-item data-id="theme02" data-name="LOVELY" data-desc="밝고 화사한 스타일" data-font="Nanum Gothic" data-background-color="#f6e5dd" data-font-css="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"></ez-item>
+			<ez-item data-id="theme03" data-name="SOFT" data-desc="은은하고 부드러운 스타일" data-font="pretendard" data-background-color="#dbe3f6" data-font-css="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"></ez-item>
+		</ez-var>
+	</ez-prop>
+</script>
+</head>
+
+<body class="theme01" data-ez-theme="theme01">
+  <div id="skipNavigation">
+    <p><a href="#category">전체상품목록 바로가기</a></p>
+    <p><a href="#contents">본문 바로가기</a></p>
+  </div>
+  <div id="wrap">
+    <!--@import(/layout/basic/header.html)-->
+    <!--@import(/layout/basic/sidebar.html)-->
+    <div id="container" data-ez="layout-1xu277d-1">
+      <div id="contents">
+        <span module="Layout_MobileAction" class="RTMB">
+          <a href="#none" onclick="{$go_back}"><!--@import(/svg/icon-go-back.html)--></a>
+        </span>
+        <!--@contents-->
+        <!-- 🎞️ 두 장 분할형 세로 슬라이드 배너 (Cafe24 호환) -->
+        <div class="smart-banner-wrapper circle custom-main-banner">
+          <div class="mainArea">
+            <div class="main--layout swiper-pc pc-ver">
+              <!-- Left Swiper -->
+              <div class="main_swiper_left pc_swiper_grid">
+                <div class="swiper-container">
+                  <div class="main_content swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/newfolder/images/아트보드 1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/newfolder/images/아트보드 2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/newfolder/images/아트보드 3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/newfolder/images/아트보드 4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Swiper -->
+              <div class="main_swiper_right pc_swiper_grid">
+                <div class="swiper-container">
+                  <div class="main_content swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/newfolder/images/아트보드 5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/newfolder/images/아트보드 6.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/newfolder/images/아트보드 7.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/newfolder/images/아트보드 8.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 모바일용 -->
+            <div class="main--layout swiper-mobile mobile-ver">
+              <div class="swiper-container">
+                <div class="main_content swiper-wrapper">
+                  <div class="swiper-slide"
+                    style="background-image:url(/newfolder/images/아트보드\ 1.jpg);"></div>
+                  <div class="swiper-slide"
+                    style="background-image:url(/newfolder/images/아트보드\ 2.png);"></div>
+                  <div class="swiper-slide"
+                    style="background-image:url(/newfolder/images/아트보드\ 3.png);"></div>
+                  <div class="swiper-slide"
+                    style="background-image:url(/newfolder/images/아트보드\ 4.png);"></div>
+                  <div class="swiper-slide"
+                    style="background-image:url(/newfolder/images/아트보드\ 5.png);"></div>
+                  <div class="swiper-slide"
+                    style="background-image:url(/newfolder/images/아트보드\ 6.png);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 🧩 CSS -->
+        <style>
+          @media screen and (min-width:1025px) {
+            .mainArea {
+              margin: 0;
+            }
+
+            .main--layout.mobile-ver {
+              display: none;
+            }
+
+            .main--layout {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              border-top: 1px solid #ccc;
+            }
+
+            .pc_swiper_grid {
+              height: 100vh;
+            }
+
+            .pc_swiper_grid .swiper-container {
+              width: 100%;
+              height: 100%;
+              border-bottom: 1px solid #202020;
+            }
+
+            .pc_swiper_grid img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: top center;
+            }
+
+            .main_swiper_left {
+              border-right: 1px solid #202020;
+            }
+          }
+
+          @media screen and (max-width:1024px) {
+            .main--layout.pc-ver {
+              display: none;
+            }
+
+            .main--layout.mobile-ver {
+              display: block;
+            }
+
+            .swiper-mobile .swiper-container {
+              width: 100%;
+              height: 100vh;
+            }
+
+            .swiper-mobile .swiper-slide {
+              background-size: cover;
+              background-position: top center;
+              background-repeat: no-repeat;
+            }
+          }
+        </style>
+
+        <!-- 🌀 Swiper Library -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- ⚙️ Swiper 동작 스크립트 -->
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            var swiperLeft = new Swiper('.main_swiper_left .swiper-container', {
+              speed: 1650,
+              autoplay: { delay: 3000, disableOnInteraction: false, reverseDirection: true },
+              direction: 'vertical',
+              loop: true,
+            });
+
+            var swiperRight = new Swiper('.main_swiper_right .swiper-container', {
+              speed: 1650,
+              autoplay: { delay: 3000, disableOnInteraction: false },
+              direction: 'vertical',
+              loop: true,
+            });
+
+            var swiperMobile = new Swiper('.swiper-mobile .swiper-container', {
+              speed: 1650,
+              autoplay: { delay: 3000, disableOnInteraction: false },
+              pagination: { el: '.swiper-pagination', clickable: true },
+              loop: true,
+            });
+          });
+        </script>
+
+
+      </div>
+
+      <div class="layer_shadow" id="layer_shadow"></div>
+      <div id="layoutDimmed" class="dimmed"></div>
+
+      <link rel="stylesheet" href="/프로젝트/layout/basic/css/sub_style.css">
+      <link rel="stylesheet" href="/프로젝트/layout/basic/css/sub_theme.css">
+      <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme01.css">
+      <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme02.css">
+      <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme03.css">
+      <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_layout.css">
+
+      <link rel="stylesheet" href="/newfolder/mystyle.css">
+      <!--@css(/layout/basic/css/sub_style.css)-->
+      <!--@css(/layout/basic/css/sub_theme.css)-->
+      <!--@css(/layout/basic/css/add_theme01.css)-->
+      <!--@css(/layout/basic/css/add_theme02.css)-->
+      <!--@css(/layout/basic/css/add_layout.css)-->
+
+ <!--@css(/newfolder/css/ub-variables.css)-->
+  <!--@css(/newfolder/css/ub-grid-system.css)-->
+  <!--@css(/newfolder/myscript.css)-->
+
+  <!--@css(/newfolder/do-style.css)-->
+
+  <!--@js(/newfolder/js/myscript.js)-->
+</body>
+
+</html>
