@@ -130,3 +130,26 @@ jQuery(document).ready(function() {
 		}
 	});
 });
+
+          document.addEventListener('DOMContentLoaded', function () {
+            var swiperLeft = new Swiper('.main_swiper_left .swiper-container', {
+              speed: 1650,
+              autoplay: { delay: 3000, disableOnInteraction: false, reverseDirection: true },
+              direction: 'vertical',
+              loop: true,
+            });
+
+            var swiperRight = new Swiper('.main_swiper_right .swiper-container', {
+              speed: 1650,
+              autoplay: { delay: 3000, disableOnInteraction: false },
+              direction: 'vertical',
+              loop: true,
+            });
+
+            var swiperMobile = new Swiper('.swiper-mobile .swiper-container', {
+              speed: 1650,
+              autoplay: { delay: 3000, disableOnInteraction: false },
+              pagination: { el: '.swiper-pagination', clickable: true },
+              loop: true,
+            });
+          });
