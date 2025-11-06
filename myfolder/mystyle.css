@@ -839,3 +839,29 @@ content_list */
      .df-bannermanager div[df-banner-clone] iframe{
       display: block; width: 100%; height: 100%;
      }
+
+/* 버튼 색상 변경 */
+[class^='btnSubmit'], a[class^='btnSubmit'] {
+    background: #ccc;
+    color: #fff;
+}
+
+/* 옵션 칼라칩 버튼 -> 사각형 만들기 */
+@media (min-width:1024.002px) {
+  .xans-product-detail .xans-product-option .ec-product-button.ec-product-preview li {
+    border-radius: 0%;
+    margin-right: 8px;
+    padding: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #efefef;
+}
+.xans-product-detail .xans-product-option .ec-product-button.ec-product-preview li.ec-product-selseted {
+   border: 1px solid #000;
+}
+  .xans-product-detail .xans-product-option .ec-product-button.ec-product-preview li a {
+    width: 30px;
+    height: 30px;
+   
+  }
+}

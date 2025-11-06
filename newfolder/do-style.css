@@ -110,3 +110,17 @@
               background-repeat: no-repeat;
             }
           }
+
+/* 3.메인상품분류 슬라이드 */
+.ec-base-product ul.grid4_slide .thumbnail {
+    margin: 0;
+    margin-right: 10px;
+}
+.main_product_slide .main_title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 96%;
+}
+.swiper-scrollbar {
+  visibility: hidden !important;
+}

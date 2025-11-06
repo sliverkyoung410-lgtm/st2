@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
 	/* 메인 상품 슬라이드 */
 	var special_slide = new Swiper('.special_slide', {
 		slidesPerView: 'auto',
-		spaceBetween: 20,
+		spaceBetween: 0,
 		observer: true,
 		observeParents: true,
 		speed:700,
@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
 		breakpoints: {
 			768: {
 				slidesPerView: 'auto',
-				spaceBetween: 10,
+				spaceBetween: 0,
 			},
 		}
 	});
