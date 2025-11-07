@@ -12,7 +12,25 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <!-- // PG크로스브라우징필수내용 -->
 
-    <title></title>
+    <title>푸터-프로젝트</title> 
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/프로젝트/layout/basic/css/common.css"><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/layout.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-ui.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-button.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-tab.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-table.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-tooltip.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-help.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-fold.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-box.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-desc.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-product.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-prdInfo.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-paginate.css">
+  <link rel="stylesheet" href="/newfolder/css/ub-variables.css">
+  <link rel="stylesheet" href="/newfolder/css/ub-grid-system.css">
+  
     <!--@css(/layout/basic/css/common.css)--><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
     <!--@css(/layout/basic/css/layout.css)-->
     <!--@css(/layout/basic/css/ec-base-ui.css)-->
@@ -72,62 +90,130 @@
 <div id="container" data-ez="layout-1xu277d-1">
 	<div id="contents">
 		<span module="Layout_MobileAction" class="RTMB">
-			<a href="#none" onclick="{$go_back}"><!--@import(/svg/icon-go-back.html)-->뒤로가기</a>
+			<a href="#none" onclick="{$go_back}"><!--@import(/svg/icon-go-back.html)--></a>
 		</span>
 		<!--@contents-->
-		
+    <!-- 11.7  -->
+     <div class="product-slide swiper-container">
+  <!-- 흐림 효과용 레이어 -->
+  <div class="fade-overlay fade-left"></div>
+  <div class="fade-overlay fade-right"></div>
+
+  <ul class="prdList swiper-wrapper grid5">
+    <li class="swiper-slide">…상품1…</li>
+    <li class="swiper-slide">…상품2…</li>
+    <li class="swiper-slide">…상품3…</li>
+    <li class="swiper-slide">…상품4…</li>
+    <li class="swiper-slide">…상품5…</li>
+    <li class="swiper-slide">…상품6…</li>
+    <li class="swiper-slide">…상품7…</li>
+    <li class="swiper-slide">…상품8…</li>
+  </ul>
+</div>
+
+<script>
+  var swiper = new Swiper('.product-slide.swiper-container', {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    loop: true,
+    speed: 4000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    freeMode: true,
+    freeModeMomentum: false,
+    allowTouchMove: false,
+    grabCursor: true,
+    breakpoints: {
+      1024: { slidesPerView: 5 },
+      768: { slidesPerView: 3 },
+      480: { slidesPerView: 2 },
+    },
+  });
+
+  // 🖱 마우스 올리면 정지 / 떼면 다시 재생
+  const slideEl = document.querySelector('.product-slide');
+  slideEl.addEventListener('mouseenter', () => swiper.autoplay.stop());
+  slideEl.addEventListener('mouseleave', () => swiper.autoplay.start());
+</script>
+
+.product-slide {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+/* 상품 슬라이드 스타일 */
+.product-slide .prdList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-slide .swiper-slide {
+  transition-timing-function: linear !important; /* 부드럽게 이동 */
+}
+
+/* 🔸 흐림(페이드) 효과 */
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  width: 80px;               /* 흐림 폭 (조절 가능) */
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;      /* 클릭 방해 안 하게 */
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, #fff 0%, rgba(255,255,255,0) 100%);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, #fff 0%, rgba(255,255,255,0) 100%);
+}
+
+/* 배경이 흰색이 아닐 경우, 배경색에 맞게 변경하세요 */
+
+
+
+     
+
+
+
+
 	</div>
 </div>
 <!--@import(/layout/basic/footer.html)-->
 <!--#ez="1/1"-->
 </div><!-- //wrap -->
 
-	<div id="progressPaybar" style="display:none;">
-		<div id="progressPaybarBackground" class="layerProgress"></div>
-		<div id="progressPaybarView">
-			<div class="box">
-				<h3>현재 결제가 진행중입니다.</h3>
-				<p class="txt">
-					본 결제 창은 결제완료 후 자동으로 닫히며,결제 진행 중에 본 결제 창을 닫으시면<br>
-					주문이 되지 않으니 결제 완료 될 때 까지 닫지 마시기 바랍니다.
-				</p>
-				<div class="progressbar"><img src="//img.echosting.cafe24.com/skin/skin/common/img_loading.gif" alt="loading" loading="lazy"></div>
-			</div>
-		</div>
-	</div>
-
-	<div module="Layout_multishopShipping">
-		<!--@css(/layout/basic/css/ec-base-layer.css)-->
-		<!--@css(/css/module/layout/multishopShipping.css)-->
-		<!--@js(/js/module/layout/multishopShipping.js)-->
-		<div class="worldshipLayer ec-base-layer typeModal">
-			<div class="header">
-				<h3>WORLD SHIPPING</h3>
-			</div>
-			<div class="content">
-				<p class="desc">PLEASE SELECT THE DESTINATION COUNTRY AND LANGUAGE :</p>
-				<select module="Layout_multishopShippingCountrylist">
-					<option value="{$country_code}" {$country_default_selected}>SHIPPING TO : {$country_name}</option>
-					<option value="{$country_code}" {$country_default_selected}>SHIPPING TO : {$country_name}</option>
-				</select>
-				<select module="Layout_multishopShippingLanguagelist">
-					<option value="{$shop_domain}" {$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
-					<option value="{$shop_domain}" {$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
-				</select>
-			</div>
-			<div class="ec-base-button">
-				<a href="#none" class="btnSubmitFix sizeM">GO</a>
-			</div>
-			<a href="#none" class="btnClose">닫기</a>
-		</div>
-	</div>
 
 	<div class="layer_shadow" id="layer_shadow"></div>
 	<div id="layoutDimmed" class="dimmed"></div>
+
+	  <link rel="stylesheet" href="/프로젝트/layout/basic/css/sub_style.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/sub_theme.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme01.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme02.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme03.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_layout.css">
+
+  <link rel="stylesheet" href="/newfolder/mystyle.css">
 	<!--@css(/layout/basic/css/sub_style.css)-->
 	<!--@css(/layout/basic/css/sub_theme.css)-->
 	<!--@css(/layout/basic/css/add_theme01.css)-->
 	<!--@css(/layout/basic/css/add_theme02.css)-->
 	<!--@css(/layout/basic/css/add_layout.css)-->
+
+  <!--@css(/newfolder/css/ub-variables.css)-->
+  <!--@css(/newfolder/css/ub-grid-system.css)-->
+  <!--@css(/newfolder/myscript.css)-->
+
+  <!--@css(/newfolder/do-style.css)-->
+
+  <!--@js(/newfolder/js/myscript.js)-->
 </body>
 </html>

@@ -153,3 +153,45 @@ jQuery(document).ready(function() {
               loop: true,
             });
           });
+
+/*
+11/7 new arrivals 배너 작업
+*/ 
+ document.addEventListener('DOMContentLoaded', function() {
+    // Swiper 초기화
+    var swiper = new Swiper('.product-slide.swiper-container', {
+      slidesPerView: 5,
+      spaceBetween: 20,
+      loop: true,
+      speed: 4000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+      },
+      freeMode: true,
+      grabCursor: true,
+      allowTouchMove: false,
+      breakpoints: {
+        1024: { slidesPerView: 5 },
+        768: { slidesPerView: 3 },
+        480: { slidesPerView: 2 }
+      },
+      on: {
+        init: function() {
+          // 초기화 시 자동재생 시작
+          this.autoplay.start();
+        }
+      }
+    });
+
+    // 마우스 올리면 멈춤, 내리면 다시 실행
+    var slideEl = document.querySelector('.product-slide');
+    if (slideEl) {
+      slideEl.addEventListener('mouseenter', function() {
+        swiper.autoplay.stop();
+      });
+      slideEl.addEventListener('mouseleave', function() {
+        swiper.autoplay.start();
+      });
+    }
+  });

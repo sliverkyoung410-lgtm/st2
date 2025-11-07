@@ -124,3 +124,101 @@
 .swiper-scrollbar {
   visibility: hidden !important;
 }
+
+/* 해더 .푸터 컬러변경 11/7 */
+.theme03 #header {
+    background-color: #f6f2f7 !important;
+}
+.theme03 .main_map {
+    background-color: #f6f2f7;
+}
+
+/* 
+동영상 배경편집 11/7 
+*/
+
+.theme03 .main_video .main_video_box:before {
+    background-color: #fff;
+}
+.main_video .main_video_box:before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: 26%;
+    width: 100vw;
+    height: 80%;
+    /* background-color: #f4f4f4; */
+}
+.main_video .main_title_txt01 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;        /* 진하게 */
+  font-size: 51px;         /* 글씨 크기 */
+  color: #000;             /* 색상 (원하시면 변경 가능) */
+  letter-spacing: 2.2px;   /* 자간 (선택) */
+  line-height: 0.3; 
+  text-transform: capitalize; /* 첫 글자만 대문자 (선택) */
+}
+
+/********
+11/7 new arrivals 상품배너 
+*********/
+
+.product-slide {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.product-slide .prdList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-slide .swiper-slide {
+  transition-timing-function: linear !important;
+}
+
+/* 흐림 효과 */
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, #fff 0%, rgba(255,255,255,0) 100%);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, #fff 0%, rgba(255,255,255,0) 100%);
+}
+
+/* 
+둥글게 + 컬러 */
+.main_product_category .main_product_inner .main_product_tab li.active {
+    background-color: #f6f2f7;
+    border-radius: 14px;
+}
+
+#header .inner .top_nav_box .top_category li.on .sub_cate01,
+#header .inner .top_nav_box .top_category .sub-category {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    margin: 0;
+    width: auto;
+    min-width: 140px;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* ← 반투명 흰색으로 변경 */
+    box-shadow: 0px 7px 21.87px 5.13px rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(5px); /* 💡배경 흐림효과 (선택사항) */
+}
